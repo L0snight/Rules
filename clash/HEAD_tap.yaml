@@ -1,0 +1,18 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: false
+mode: Rule
+log-level: debug
+external-controller: 0.0.0.0:9090
+experimental:
+  send-through: 192.168.0.166:0 #如必要，改成自己的
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  nameserver:
+    - 119.29.29.29
+    - 114.114.114.114
+    - 223.5.5.5
